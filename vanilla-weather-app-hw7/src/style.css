@@ -30,6 +30,10 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+form {
+  margin-bottom: 10px;
+}
+
 .overview {
   margin-bottom: 20px;
 }
