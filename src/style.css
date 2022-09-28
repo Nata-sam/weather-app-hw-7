@@ -1,11 +1,18 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background: #dbebf2;
+}
+div.container-sm {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   color: #878787;
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 48px;
+  font-weight: 700;
   line-height: 28px;
   text-align: left;
   margin-bottom: 0;
@@ -31,34 +38,49 @@ li:first-letter {
 }
 
 form {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .overview {
-  margin-bottom: 20px;
+  margin: 30px auto;
+  display: block;
 }
 
 .weather-app-wrapper {
+  display: block;
+
   max-width: 900px;
-  margin: 30px auto;
+
+  margin-top: 30px;
+  background: white;
+}
+
+.weather-app .btn {
+  background: #dc7555;
+  border: none;
+}
+.weather-app .btn:hover {
+  background: #48484a;
+  border: none;
 }
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #dadde1;
+
   border-radius: 10px;
 }
 .weather-temperature img {
   margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  height: 80px;
+  width: 80px;
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: #48484a;
   font-size: 64px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .weather-temperature .units {
@@ -68,7 +90,7 @@ form {
 }
 
 .weather-temperature .active {
-  color: rgb(33, 33, 33);
+  color: #48484a;
   cursor: default;
   text-decoration: none;
 }
@@ -83,9 +105,7 @@ form {
 }
 
 .forecast-box {
-  border: 1px solid;
   border-radius: 10px;
-  border-color: #c0c0c0;
 }
 
 .weather-forecast-date {
@@ -94,9 +114,12 @@ form {
 }
 
 .weather-forecast-temperature-min {
+  color: #dc7555;
   opacity: 0.6;
 }
 
 .weather-forecast-temperatures {
+  color: #dc7555;
   font-size: 13px;
+  font-weight: 700;
 }
